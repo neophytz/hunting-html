@@ -1,0 +1,16 @@
+/* linking multiple css files */
+/* variables and best practice */
+@import url('./vars.css');
+
+body {
+    font-family: 'Segoe UI';
+}
+
+
+.font-color-pink {
+    color: var(--blue)
+}
+
+#font-color-pink {
+    color: rgb(237, 46, 77);
+}
