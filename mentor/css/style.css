@@ -1,16 +1,97 @@
-/* linking multiple css files */
-/* variables and best practice */
 @import url('./vars.css');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root {
+    --navbar-height: 65px    
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Segoe UI';
 }
 
-
-.font-color-pink {
-    color: var(--blue)
+li {
+    list-style: none;
 }
 
-#font-color-pink {
-    color: rgb(237, 46, 77);
+a {
+    text-decoration: none;
+}
+
+header {
+    height: var(--navbar-height);
+    background-color: var(--dark);
+    display: flex;
+    padding: 0px 40px;
+    color: var(--white);
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    gap: 3rem;
+    flex-direction: row;
+    align-items: center;
+}
+
+header a{
+    color: var(--white);
+}
+header .logo {
+    font-weight: 600;
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* hero section css */
+
+.hero {
+    display: flex;
+    height: 100vh;
+    background-image: url("../assets/hero-bg.svg");
+    background-size: cover;
+    padding: 50px;
+    background-repeat: no-repeat;
+}
+
+.hero-info {
+    width: 50%;
+    padding-top: 180px;
+    margin-left: 20px;
+    height: 100%;
+}
+
+.hero-info h1 {
+    font-size: 68px;
+    font-family: 'Nunito';
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+.hero-info p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    color: rgb(50, 50, 50);
+    max-width: 80%;
+}
+
+.hero-info button {
+    cursor: pointer;
+    height: 42px;
+    padding: 10px 25px;
+    border: none;
+    background-color: var(--dark);
+    color: var(--white);
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.hero-img {
+    width: 50%;
 }

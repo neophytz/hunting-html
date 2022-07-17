@@ -1,5 +1,7 @@
 :root {
-    --blue: #1e90ff;
-    --black: #000;
-    --default-font-size: '12px'
+    --light: rgb(231, 255, 255);
+    --secondary: #62b6cbff;
+    --dark: #0D2330;
+    --white: #FFF;
+    --muted: #5fa8d3ff;
 }

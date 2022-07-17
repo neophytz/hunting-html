@@ -1,57 +1,55 @@
 <html>
     <head>
-        <title>Learning CSS</title>
+        <title>Portfolio - ana de Armas</title>
         <!--meta data, style, linking-->
         <link rel="stylesheet" href="./css/style.css">
+        <script src="https://use.fontawesome.com/cebf773215.js"></script>
     </head>
 
     <body>
-        <!--main content-->
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, laborum.
-        </p>
-        <div class="card">
-            <h3 class="card-title">title of the card</h3>
-            <p class="card-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perferendis ipsum, 
-                atque perspiciatis suscipit pariatur repellendus et molestias dolore totam.
-            </p>
-            <a href="www.google.com">google</a>
-            <button>click me</button>
-        </div>
-        <hr>
+        <header>
+            <div class="logo">
+                <span>
+                    <i class="fa fa-code-fork"></i>
+                    Ana de Arma
+                </span>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header> 
 
-
-        <!---span vs p tag vs a tag-->
-        <div>
-            <!--a tag-->
-            <a href="www.google.com" target="_blank">link here</a>
-            <a href="www.linkedin.com" target="_blank">link 2</a>
-
-            <br>
-            <span>dance</span>
-            <span>music</span>
-            <span>hello</span>
-            <span>world</span>
-            <br>
-
-            <p class="font-color-pink">dance</p>
-            <p>music</p>
-            <p>hello</p>
-            <p id="font-color-pink">world</p>
-        </div>
-
-        <!--form is used to take set of input from user-->
-        <form>
-            <h3>Sign up</h3>
-            <input type="text">
-            <br>
-            <input type="password">
-            <br>
-            <input type="checkbox">
-            <br>
-            <button>Create my account</button>
-        </form>
+        <section class="hero">
+            <div class="hero-info">
+                <h1>Ana de Armas</h1>
+                <p>Ana Celia de Armas Caso is a Cuban and Spanish actress. She began her career in Cuba and had a leading role in the romantic drama Una rosa de Francia</p>
+                <a href="https://www.instagram.com/ana_d_armas/">
+                    <button>
+                        <i class="fa fa-instagram"></i>
+                        <span>Check my insta</span>
+                    </button>
+                </a>
+            </div>
+            <div class="hero-img">
+                <img src="./assets/ana.png" alt="Ana de Armas face image on our webiste.">
+            </div>
+        </section>
 
     </body>
 </html>
