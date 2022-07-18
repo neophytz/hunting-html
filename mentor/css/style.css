@@ -4,6 +4,7 @@
 :root {
     --navbar-height: 65px    
 }
+
 * {
     margin: 0px;
     padding: 0px;
@@ -22,7 +23,7 @@ a {
     text-decoration: none;
 }
 
-header {
+.__header {
     height: var(--navbar-height);
     background-color: var(--dark);
     display: flex;
@@ -32,17 +33,18 @@ header {
     align-items: center;
 }
 
-header nav ul{
+.__header nav ul{
     display: flex;
     gap: 3rem;
     flex-direction: row;
     align-items: center;
 }
 
-header a{
+.__header a{
     color: var(--white);
 }
-header .logo {
+
+.__header .logo {
     font-weight: 600;
     font-size: 24px;
     font-family: 'Nunito', sans-serif;
@@ -90,8 +92,125 @@ header .logo {
     color: var(--white);
     font-size: 16px;
     border-radius: 4px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+}
+
+.hero-info button span {
+    padding-left: 10px;
+}
+
+/* pseudo selectors */
+.hero-info button:hover {
+    box-shadow: 0px 15px 30px rgb(77 87 222 / 30%);
+    background: var(--white);
+    color: var(--dark);
 }
 
 .hero-img {
     width: 50%;
+}
+
+/* The animation code */
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+/* The element to apply the animation to */
+.animation-div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+    /* animation properties */
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* about us styles */
+.about {
+    height: 80vh;
+    padding: 50px 150px;
+}
+
+.about header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about header h2 {
+    font-size: 48px;
+    font-weight: 600px;
+    font-family: 'Nunito';
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.about .about_container {
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+
+.about .about_img {
+    width: 50%;
+    background-image: url('https://media.vogue.es/photos/5e6e66f8338ac4000839055b/2:3/w_2560%2Cc_limit/Ana-de-Armas-1.jpg');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.about .about_text {
+    width: 50%;
+    padding-top: 120px;
+}
+
+.about .about_text .about_card {
+    width: 80%;
+    min-height: 380px;
+    border-radius: 8px;
+    transform: translateX(-30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.about_card h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about_card p{
+    font-size: 18px;
+    line-height: 25px;
+}
+
+/* glass morphism */
+
+.glass-morphism{
+    width: 100%;
+    background-color: var(--muted);
+    padding: 100px 0px;
+}
+
+.morphism {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height: 200px;
+    width: 200px;
 }
