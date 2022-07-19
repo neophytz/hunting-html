@@ -198,19 +198,49 @@ a {
 
 /* glass morphism */
 
-.glass-morphism{
-    width: 100%;
+.flex-container {
     background-color: var(--muted);
-    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    flex-shrink: var(--navbar-height);
+    flex-wrap: wrap;
+    height: 700px;
 }
 
-.morphism {
+.flex-item {
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+}
+
+.flex-item:nth-of-type(1){
+    background: rgb(194, 15, 15);
+}
+
+.flex-item:nth-of-type(2){
+    background: rgb(0, 255, 34);
+}
+
+.flex-item:nth-of-type(3){
+    background: rgb(21, 0, 255);
+}
+
+.flex-item-child {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    background-color: var(--dark);
+}
+
+.sachin {
+    height: 700px;
+    background: var(--dark) !important;
 }
