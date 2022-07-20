@@ -244,3 +244,14 @@ a {
     height: 700px;
     background: var(--dark) !important;
 }
+
+
+/* 
+max-width <=
+min-width >= 
+*/
+@media screen and (max-width: 480px) {
+    body {
+      background-color: lightgreen;
+    }
+}
