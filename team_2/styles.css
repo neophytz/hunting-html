@@ -1,0 +1,239 @@
+/* *{
+   background-color: rgb(199, 218, 218);
+} */
+
+.container{
+    min-height: 70vh;
+    border: 5px solid black;
+    background-color: black;
+    /* display: flex; */
+    /* justify-content: center; */
+    margin: auto;
+
+}   
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.sec-1{
+
+height: 35vh;
+width: 35vh;
+margin: 100px 20px;
+color: white;
+
+}
+
+.sec-2{
+ 
+   height: 35vh;
+   width: 35vh;
+   margin: 100px 20px;
+   color: white;
+
+  }
+
+.sec-3{
+   
+   height: 35vh;
+   width: 35vh;
+   margin: 100px 20px;
+   color: white;
+
+}
+.sec-4{
+  
+   height: 35vh;
+   width: 35vh;
+   margin: 100px 20px;
+   color: white;
+}
+
+.sec-1 h2{
+
+   color: white;
+   font-size: 25px;
+}
+.sec-2 h2{
+   color: white;
+   font-size: 25px;
+}
+.sec-3 h2{
+   color: white;
+   font-size: 25px;
+}
+.sec-4 h2{
+   color: white;
+   font-size: 25px;
+}
+
+
+.footer{
+   color: white;
+   font-size: 20px;
+   justify-content: center;
+   text-align: center;
+   margin-bottom: 50px;
+   
+   }
+   .span-1{
+      color: green;
+   }
+
+.container-2{
+   margin-top:30px;
+   background-color:#dce7e9;
+ min-height: 50vh;
+ justify-content: center;
+ text-align: center;
+ align-items: center;
+ 
+
+}
+.card-section{
+   display: flex;
+ 
+   margin: 25px 10px;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+}
+
+
+   .box1{
+    height: 250px;
+    width: 350px;
+    background-color: #e1d8d7;
+    margin: 116px 40px;
+    box-shadow: 5px 10px;
+   }
+
+   .box2{
+      height: 250px;
+      width: 350px;
+      background-color: #e1d8d7;
+      margin: 116px 40px; 
+      box-shadow: 5px 10px;
+
+   }
+
+   .box3{
+      height: 250px;
+      width: 350px;
+      background-color: #e1d8d7;  
+      margin: 116px 40px;
+      box-shadow: 5px 10px;
+
+   }
+
+#img-1{
+   margin-left: 120px;
+   height: 120px;
+   width: 120px;
+   
+}
+
+#Experience-1{
+   font-size: 32px;
+   margin:40px 20px;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+ 
+#p-1{
+   font-size: 17px;
+   line-height: 25px;
+}
+
+#Market{
+
+   font-size: 32px;
+   margin:40px 20px;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+
+#Target{
+
+   font-size: 32px;
+   margin:40px 20px;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+#p-2{
+
+   font-size: 17px;
+   line-height: 25px;
+}
+
+#p-3{
+   font-size: 17px;
+   line-height: 25px;
+   font-weight: 25;
+}
+.Services{
+   font-size: 55px;
+
+   justify-content: center;
+   text-align: center;
+}
+.Copy-1{
+font-size: 20px;
+}
+.grandpa{
+   max-height:100vh;
+   border: 2px solid black;
+   background-color: aqua;
+}
+
+.pa{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-top: 60px;
+}
+
+.son-1{
+height: 450px;
+width: 450px;
+
+margin: 10px 20px;
+}
+.son-2{
+background-color: rgb(220, 239, 234);
+margin: 10px 20px;
+border: 2px solid black;
+height: 650px;
+width: 500px;
+
+}
+#jetha{
+   height: 500px;
+   width: 400px;
+   /* transform: translateY(30px); */
+   transform: translatex(86px);
+}
+.jetha-about{
+   font-size: 20px;
+  
+   line-height: 28px;
+   margin-left: 40px;
+   word-spacing: 12px;
+   
+}
+.main-head{
+   justify-content: center;
+   text-align: center;
+   font-size: 50px;
+}
+#button-1{
+   height: 50px;
+   width: 150px;
+   text-decoration: none;
+}
