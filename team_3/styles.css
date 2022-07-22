@@ -1,0 +1,48 @@
+@import url(./vars.css);
+
+.body-cls{background-image: url(./assets/EAW_Natural19.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+
+}
+
+.body-cls .main{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.body-cls .main .imag{
+    min-width: 560px;
+    padding: 10px;
+    margin: 20px;
+    border: solid 5px black;
+    height: fit-content;}
+
+.body-cls .text-primary{
+   
+    padding: 10px;
+    border: solid 2px black;
+    font-family:'Nunito';
+    flex-wrap: wrap;
+    
+}
+
+.card_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    gap:20px;
+}
+
+.card_container .card{
+    background-color: burlywood;
+    padding: 0px 100px;
+    border-radius: 8px;
+
+}
