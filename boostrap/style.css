@@ -1,0 +1,23 @@
+@import url('./vars.css');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.parent{
+    width: 400px;
+    position: relative;
+    height: 5000px;
+}
+
+.child {
+    height: 200px;
+    width: 200px;
+    left: -100px;
+    position: absolute;
+    z-index: 9;
+}
