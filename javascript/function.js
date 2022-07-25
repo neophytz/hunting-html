@@ -105,6 +105,9 @@ const name_of_function = (name) => {
     return `hello ${name} from console log`;
 }
 
+console.log('hello',name, 'from console log', a, age, salary);
+console.log(`hello ${name} from console log ${a} ${age} ${salary}`)
+
 const DEFAULT_NAME = (name = 'sachin') => {
     console.log("I'm getting executed first")
     return name;
@@ -115,7 +118,6 @@ console.log(name_of_function(DEFAULT_NAME('roy')));
 
 const check = (name) => {
     console.log(name);
-
     // if no return; default return  value is undefined.
 }
 
