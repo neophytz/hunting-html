@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Edu SA Beginner', cursive; */
+    font-family: 'Rubik', sans-serif;
+}
+.form-section{
+    position: relative;
+    z-index: 2;
+    padding: 80px 75px;
+    border: 1px solid #E2DFDD;
+    background: #ffffff;
+}
+.title{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.logo{
+   padding: 20px;
+   margin-top: 3px;
+    
+    border: 1px solid #E2DFDD;
+    border-radius: 10px;
+}
+.inp{
+    padding: 12px 20px !important;
+    border: 1px solid #E2DFDD;
+    font-size: 15px;
+    /* padding: 12px 20px; */
+    margin: 20px 0px;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 14px 40px 0px rgb(220 220 220 / 30%);
+    border-radius: 5px;
+}
+.bt{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 2px;
+    background: #C7A17A;
+    padding: 10px 34px;
+    border-radius: 5px;
+    border: 1px solid #C7A17A;
+    font-weight: 500;
+}
+.inp-res{
+    padding: 19px 20px !important;
+    border: 1px solid #E2DFDD;
+    font-size: 15px;
+    color: #9e9e9e;
+    margin: 20px 0px;
+background-color: #E2DFDD;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 14px 40px 0px rgb(220 220 220 / 30%);
+    border-radius: 5px;}
+
+ .background {
+    background: url(./assets/img/coffe.jpeg) repeat;
+    border: 2px solid black;
+    background-size: cover;
+    /* height: 500px; */
+    width: 100%;
+    position: relative;
+  }
+  
+ .trans {
+    /* margin: 30px; */
+    background-color: black;
+    border: 1px solid black;
+    opacity: 0.6;
+  }
+  
+.ban {
+    margin: 5%;
+    font-weight: bold;
+color: #C7A17A !important;
+font-size: 70px;
+letter-spacing: 2px;
+  } 
+
+
+
+
+/*  #b {
+    background-image: url(./assets/img/coffe.jpeg);
+    background-size: cover;
+    height: 500px;
+    z-index: -1;
+    width: 100%;
+    position: relative;
+}
+
+.bg {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 500px;
+    z-index: -1;
+    position: absolute;
+}
+
+.box {
+    position: absolute;
+     width: 1200px;
+    height: 500px; 
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(248, 248, 248);
+}
+*/
