@@ -109,3 +109,200 @@ letter-spacing: 2px;
     color: rgb(248, 248, 248);
 }
 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*navbar*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb( 0,0,0,0.5);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style:none ;
+    margin: 20px 0;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow:0 0 10px white ;
+}
+/* HOME SECTION */
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    height: 840px;
+    justify-content:center;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top:0;
+    right:0;
+    background: url('https://media.istockphoto.com/photos/cup-of-coffee-surrounded-by-coffee-beans-picture-id954537590?k=20&m=954537590&s=170667a&w=0&h=RmY6Oiw7ZJ9KCfLhxMXhC5gEnC2m_qbxDru8vqDCUqg=') no-repeat center center/cover;
+    height:900px;
+    width: 100;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.hero {
+    display: flex;
+    height: 100vh;
+    background-image: url("https://img.freepik.com/free-photo/coffee-beans-with-props-making-coffee_1220-4536.jpg?w=2000 ");
+    background-size: cover;
+    padding: 50px;
+    background-repeat: no-repeat;
+}
+
+.hero-info {
+    width: 50%;
+    padding-top: 180px;
+    margin-left: 20px;
+    height: 100%;
+}
+
+.hero-info h1 {
+    margin-top: 20px;
+    font-size: 68px;
+    font-family: 'Nunito';
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 2px 2px #ffff;
+}
+
+.hero-info p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    max-width: 80%;
+}
+.about {
+    height: 80vh;
+    padding: 50px 150px;
+}
+
+.about header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about header h2 {
+    font-size: 48px;
+    font-weight: 600px;
+    font-family: 'Nunito';
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.about .about_container {
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+.about .about_img {
+    width: 50%;
+    background-image: url('https://media.istockphoto.com/photos/cup-of-coffee-cappuccino-with-caramel-heart-shape-wooden-background-picture-id477557951?k=20&m=477557951&s=170667a&w=0&h=eUA2_j8Va6EztipumyWqgeBVVV4l7nBs1Qpd5z_Y4M4=');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.about .about_text {
+    width: 50%;
+    padding-top: 120px;
+    color: black;
+}
+
+.about .about_text .about_card {
+    width: 60%;
+    max-height: 380px; 
+    border-radius: 8px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+
+}
+
+
+.footer-dark{
+    padding: 50px 0;
+    color:#f0f9ff;
+    background: linear-gradient(to right,#00093c, #2d0b00);
+
+}
+.row{
+    width:65% ;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+ }
+.footer-dark h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 27px;
+    color: white;
+}
+.footer-dark ul{
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 0;
+    
+}
+.footer-dark ul a{
+    color: white;
+    text-decoration: none;
+    opacity:0.6;
+}
+.footer-dark ul a:hover{
+    background-color: white;
+    color: black;
+    box-shadow:0 0 10px white ;
+}
+.footer-dark .item:not(.social){
+    text-align: center;
+    padding-bottom: 20px;
+
+
+}
+.footer-dark .item.text{
+    margin-bottom: 36px ;
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+    background-color: aqua;
+    }
+}
+
