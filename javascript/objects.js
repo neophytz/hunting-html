@@ -6,6 +6,16 @@
 // Object
 
 // let 
+const newUSer = Object.freeze({
+    name: 'sachin',
+    age: 12,
+    address: {
+        line: 2,
+        pincode: 2,
+    }
+})
+// object .freeze will not let user to change or reassign
+// or delete the direct children properties like age, name, address but user can still change nested object attributes.
 
 const user = {
     name: 'sachin',
@@ -34,10 +44,26 @@ const user = {
 // important
 // console.log(user['height']);
 // console.log(user['address']['pincode']);
-
 // dynamic method
 const attribute_name = 'height';
 // console.log(user[attribute_name]);
+
+
+// dynamically property
+const arr = ['prop', 'dance', 'music', 'gali'];
+const arrValues = ['music', 12, false, 'hut bc'];
+const obj = {}; 
+arr.forEach((attribute, i) => obj[attribute] = arrValues[i]);
+console.log(obj);
+
+delete user.age;
+
+// removes only the direct children in the object.
+// delete keyword only works on the objects and not premitive datatypes.
+// it removes thge properties or attributes from the objects only.
+
+const sachin = '';
+delete sachin; // will not do anything!!
 
 // loop
 

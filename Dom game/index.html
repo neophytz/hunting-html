@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        DOM Manipulation
+    </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <!-- <div class="counter_application">
+            <div id="my_id" class="displayCount row mx-3 py-4 text-center bg-dark text-white my-3 card shadow-lg rounded border-0">
+                Loading...
+            </div>
+            <div class="d-flex justify-content-center">
+                <button onclick="appClickHandler(1)" class="btn shadow-none mx-2 btn-primary">Add 1</button>
+                <button onclick="appClickHandler(-1)" class="btn shadow-none mx-2 btn-danger">Minus 1</button>
+            </div>
+            <div class="d-flex justify-content-center mt-2">
+                <button onclick="resetCountVal()" class="btn btn-dark">Reset</button>
+            </div>
+        </div> -->
+
+        <div class="countdown p-3 bg-danger">
+            
+        </div>
+
+    </div>
+
+    <script>
+        let currentCountVal = 0;
+        const __displayCountElement = window.document.getElementById('my_id');
+
+        const displayCountOnUIElement = (element, value) => {
+            if(!element) return;
+            // checkl is value is type number and is a valid number. only then show this!
+            element.innerText = value;
+        }
+
+        // DRY - ??
+        // set default value to 0
+        displayCountOnUIElement(__displayCountElement, currentCountVal);
+
+        // every time user click on the button, 
+        // we update the currentCountVal and show the updated value ion the ui.
+        const appClickHandler = (count) => {
+            currentCountVal += count;
+            displayCountOnUIElement(__displayCountElement, currentCountVal);
+        }
+
+        const resetCountVal = () => {
+            currentCountVal = 0
+            displayCountOnUIElement(__displayCountElement, currentCountVal);
+        }
+    </script>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
