@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="p-4 bg-dark text-white text-center border-0 card shadow-lg rounded my-3">
+            <h3 id="displayCountEl">0</h3>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button onclick="handleClick(1)" class="btn shadow-lg border-0 px-4 btn-success mx-3">Increment</button>
+            <button onclick="handleClick(-1)" class="btn shadow-lg border-0 px-4 btn-danger mx-3">Decrement</button>
+        </div>
+
+        <div class="d-flex justify-content-center my-3">
+            <button onclick="handleClick(0)" class="btn shadow btn-dark px-4">Reset</button>
+        </div>
+    </div>
+
+    <script>
+        let clickCount = 0; // global variable
+        const displayEl = document.querySelector('.container #displayCountEl'); // find the display element.
+        // display the current click count.
+
+        const updateClickCountInUI = () => {
+            // find the element wherein the click count needs to be displayed!
+            // returns the HTMLElement in the form of an object! and not array
+
+            // document.getElementById();
+            // document.getElementsByClassName() // returns array of found elements
+            // document.getElementsByTagName('') // returns array
+            // document.getElementsByName() // array
+
+            // important and this is what I user most of the times.
+            if(displayEl) {
+                displayEl.innerText = clickCount;
+            } else {
+                console.error('Display element not found, please check query');
+            }
+        }
+        
+        updateClickCountInUI();
+        
+        // events?
+        const handleClick = (count) => {
+            if(count === 0) {
+                // we need to reset!!
+                clickCount = count;
+            }
+            // increment or decrement the clickCount;
+            clickCount += count;
+            updateClickCountInUI();
+        }
+    </script>
+
+
+</body>
+</html>
