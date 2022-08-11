@@ -42,3 +42,22 @@ const createCards = (skill) => {
         SKILLS_CONTAINER.innerHTML += createCards(skill);
     }
 })(USER_SKILLS);
+
+
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    fullName: function () {
+        return this.firstName + " " + this.lastName;
+    }
+}
+
+console.log(person.fullName());
+
+const person2 = {
+    firstName:"Hege",
+    lastName: "Nilsen",
+}
+
+let fullName = person.fullName.call(person2);
+console.log(fullName);
